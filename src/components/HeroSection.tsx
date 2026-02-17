@@ -12,7 +12,9 @@ const images = [testimonial3, testimonial4, testimonial5, testimonial6, testimon
 
 const CTAButton = ({ children, className = "" }: { children: React.ReactNode; className?: string }) => (
   <a
-    href="#oferta"
+    href="https://pay.kiwify.com.br/y7SBVMD"
+    target="_blank"
+    rel="noopener noreferrer"
     className={`group relative inline-flex items-center justify-center font-bold text-lg md:text-xl px-10 py-5 rounded-2xl text-accent-foreground overflow-hidden transition-all duration-500 hover:scale-[1.03] active:scale-[0.98] animate-pulse-glow ${className}`}
     style={{
       background: "linear-gradient(135deg, hsl(25 85% 55%), hsl(20 80% 48%))",
