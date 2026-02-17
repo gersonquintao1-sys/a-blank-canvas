@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="48" viewBox="0 0 200 48" fill="none">
+  <!-- Background rounded rect for icon -->
+  <rect x="4" y="8" width="32" height="32" rx="8" fill="hsl(142, 76%, 36%)" fill-opacity="0.1"/>
+  <!-- Leaf icon -->
+  <path d="M20 16c6 0 10 4 10 10s-4 10-10 10" stroke="hsl(142, 76%, 36%)" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <path d="M20 36V22" stroke="hsl(142, 76%, 36%)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M14 28c2-2 4-4 6-6" stroke="hsl(142, 76%, 36%)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Text "Ceto" -->
+  <text x="44" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="hsl(160, 25%, 10%)">Ceto</text>
+  <!-- Text "leve" in accent color -->
+  <text x="98" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" letter-spacing="-0.5" fill="hsl(142, 76%, 36%)">leve</text>
+  <!-- TM symbol -->
+  <text x="148" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="hsl(160, 25%, 10%)">™</text>
+</svg>
