@@ -58,7 +58,7 @@ const PricingSection = () => (
               <span className="font-display text-3xl md:text-4xl font-black text-gradient-accent">,90</span>
             </div>
             <p className="text-muted-foreground text-sm mt-3">
-              ou R$ 9,90 à vista • Garantia de 14 dias. Risco Zero.
+              Garantia de 14 dias. Risco Zero.
             </p>
           </div>
 
