@@ -8,7 +8,7 @@ const faqs = [
   { q: "É realmente para mães ocupadas?", a: "Foi criado especificamente para mulheres sobrecarregadas. Funciona em 15 minutos enquanto o jantar cozinha. Zero tempo extra, zero complicação." },
   { q: "Terei suporte se tiver dúvidas?", a: "Sim! Comunidade exclusiva no Telegram com suporte direto da nossa equipe e outras mães que estão no mesmo processo." },
   { q: "Em quanto tempo vejo resultados?", a: "Primeiros 3 dias: 2kg de inchaço eliminados. 7 dias completos: até 5kg na balança. Energia renovada desde o primeiro dia." },
-  { q: "Posso parcelar o investimento?", a: "Sim! Até 12x de R$3,70 no cartão. Menos que um café por dia para transformar sua vida para sempre." },
+  { q: "Posso parcelar o investimento?", a: "Sim! Até 2x de R$5,21 no cartão. Menos que um café por dia para transformar sua vida para sempre." },
 ];
 
 const FAQItem = ({ q, a, index }: { q: string; a: string; index: number }) => {
