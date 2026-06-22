@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { SectionShell } from "./SectionShell";
+import sobreNosImg from "@/assets/proposta/sobre-nos.png";
 
 export const SobreNos = () => {
   return (
@@ -19,10 +20,12 @@ export const SobreNos = () => {
                 "radial-gradient(circle, #ef4444 0%, #7f1d1d 50%, transparent 75%)",
             }}
           />
-          <div className="relative h-full w-full rounded-2xl border border-red-500/50 bg-gradient-to-br from-white/5 to-transparent flex items-center justify-center">
-            <span className="text-white/30 text-sm tracking-wide">
-              NAPRATI.CA DIGITAL
-            </span>
+          <div className="relative h-full w-full rounded-2xl border border-red-500/50 overflow-hidden">
+            <img
+              src={sobreNosImg}
+              alt="Equipe Naprati.ca Digital"
+              className="h-full w-full object-cover"
+            />
           </div>
         </motion.div>
 

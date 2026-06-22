@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
 
 export const CtaFinal = () => {
   return (
@@ -23,10 +24,18 @@ export const CtaFinal = () => {
         </h2>
         <p className="text-white/50 mt-6 mb-12">E seguir com os próximos passos...</p>
         <a
-          href="#inicio"
-          className="inline-flex items-center gap-3 rounded-full bg-white text-black font-bold px-8 py-4 hover:bg-white/90 transition-colors"
+          href="https://form.respondi.app/qcyBDonC"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-3 rounded-full bg-white text-black font-semibold pl-6 pr-2 py-2 hover:bg-white/90 transition-colors"
         >
           SEGUIR
+          <span
+            className="w-9 h-9 rounded-full flex items-center justify-center"
+            style={{ background: "linear-gradient(135deg, #ef4444, #7f1d1d)" }}
+          >
+            <ArrowUpRight size={18} className="text-white" />
+          </span>
         </a>
       </motion.div>
     </section>

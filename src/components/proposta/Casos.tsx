@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
-import { TrendingUp } from "lucide-react";
 import { SectionShell } from "./SectionShell";
 import { resultCases } from "./data";
+import caso1 from "@/assets/proposta/caso-1.png";
+import caso2 from "@/assets/proposta/caso-2.png";
+import caso3 from "@/assets/proposta/caso-3.png";
+import caso4 from "@/assets/proposta/caso-4.png";
+
+const casoImages = [caso1, caso2, caso3, caso4];
 
 export const Casos = () => {
   return (
@@ -55,11 +60,17 @@ export const Casos = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: i * 0.08 }}
-            className="rounded-xl border border-red-500/30 bg-gradient-to-b from-red-950/30 to-transparent p-6"
+            className="rounded-xl border border-red-500/30 bg-gradient-to-b from-red-950/30 to-transparent overflow-hidden"
           >
-            <TrendingUp className="text-red-500 mb-4" size={24} />
-            <p className="text-white/50 text-sm mb-1">{c.duration}</p>
-            <p className="text-white font-bold text-lg">{c.result}</p>
+            <img
+              src={casoImages[i]}
+              alt={c.result}
+              className="w-full aspect-[9/16] object-cover"
+            />
+            <div className="p-4">
+              <p className="text-white/50 text-sm mb-1">{c.duration}</p>
+              <p className="text-white font-bold text-lg">{c.result}</p>
+            </div>
           </motion.div>
         ))}
       </div>

@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { navSections } from "./data";
+import { Logo } from "./Logo";
 
 export const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -23,8 +24,8 @@ export const Nav = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-16 h-16 flex items-center justify-between">
-        <button onClick={() => goTo("inicio")} className="text-white font-bold tracking-wide text-sm">
-          NAPRATI<span className="text-red-500">.CA</span>
+        <button onClick={() => goTo("inicio")}>
+          <Logo />
         </button>
 
         <nav className="hidden lg:flex items-center gap-6 text-xs text-white/60 tracking-wide">

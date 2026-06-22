@@ -33,7 +33,7 @@ export const Implementacao = () => {
       </div>
 
       <div className="relative">
-        <div className="hidden md:block absolute top-[10px] left-0 right-0 h-1 rounded-full bg-gradient-to-r from-orange-600 via-red-600 to-pink-400" />
+        <div className="hidden md:block absolute top-[5px] left-0 right-0 h-1 rounded-full bg-gradient-to-r from-orange-600 via-red-600 to-pink-400" />
         <div className="grid md:grid-cols-4 gap-10 md:gap-6">
           {cicloImplementacao.map((step, i) => (
             <motion.div
@@ -44,10 +44,10 @@ export const Implementacao = () => {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="relative"
             >
+              <div className="hidden md:block w-3 h-3 rounded-full bg-white border-4 border-black mb-6" />
               <p className="text-red-500 font-bold text-xs tracking-widest mb-3">
                 {step.semana.toUpperCase()}
               </p>
-              <div className="hidden md:block w-3 h-3 rounded-full bg-white border-4 border-black mb-3" />
               <p className="font-bold text-lg">{step.title}</p>
             </motion.div>
           ))}
