@@ -24,7 +24,9 @@ export const CtaFinal = () => {
         </h2>
         <p className="text-white/50 mt-6 mb-12">E seguir com os próximos passos...</p>
         <a
-          href="#inicio"
+          href="https://form.respondi.app/qcyBDonC"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-3 rounded-full bg-white text-black font-semibold pl-6 pr-2 py-2 hover:bg-white/90 transition-colors"
         >
           SEGUIR

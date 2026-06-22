@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
-import { useScrollFade } from "./useScrollFade";
 
 interface SectionShellProps {
   id: string;
@@ -11,13 +10,9 @@ interface SectionShellProps {
 }
 
 export const SectionShell = ({ id, eyebrow, index, children, className = "" }: SectionShellProps) => {
-  const { ref, opacity, y } = useScrollFade<HTMLElement>();
-
   return (
-    <motion.section
-      ref={ref}
+    <section
       id={id}
-      style={{ opacity, y }}
       className={`relative w-full bg-black text-white px-6 md:px-16 py-24 md:py-32 overflow-hidden ${className}`}
     >
       <div className="max-w-7xl mx-auto relative z-10">
@@ -36,7 +31,7 @@ export const SectionShell = ({ id, eyebrow, index, children, className = "" }: S
       <div className="absolute bottom-6 right-6 text-xs text-white/20 font-semibold">
         {String(index).padStart(2, "0")}
       </div>
-    </motion.section>
+    </section>
   );
 };
 
