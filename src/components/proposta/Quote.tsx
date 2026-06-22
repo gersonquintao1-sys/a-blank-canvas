@@ -1,8 +1,15 @@
 import { motion } from "framer-motion";
+import { useScrollFade } from "./useScrollFade";
 
 export const Quote = () => {
+  const { ref, opacity, y: fadeY } = useScrollFade<HTMLElement>();
+
   return (
-    <section className="relative w-full bg-black text-white px-6 md:px-16 py-28 overflow-hidden">
+    <motion.section
+      ref={ref}
+      style={{ opacity, y: fadeY }}
+      className="relative w-full bg-black text-white px-6 md:px-16 py-28 overflow-hidden"
+    >
       <div
         className="absolute inset-0"
         style={{
@@ -27,6 +34,6 @@ export const Quote = () => {
           <span>Flávio Augusto</span>
         </div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
