@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
+import { Logo } from "./Logo";
 
 export const Hero = () => {
   const scrollToNext = () => {
@@ -60,12 +61,7 @@ export const Hero = () => {
         className="relative z-10 max-w-2xl"
       >
         <div className="mb-10">
-          <p className="text-lg md:text-xl font-bold tracking-wide">
-            NAPRATI<span className="text-red-500">.CA</span>
-          </p>
-          <p className="text-[10px] tracking-[0.3em] text-white/50 italic -mt-1">
-            DIGITAL
-          </p>
+          <Logo size="lg" />
         </div>
         <h1 className="font-extrabold leading-[0.95] text-5xl sm:text-6xl md:text-7xl">
           <span className="text-white">PROPOSTA</span>
