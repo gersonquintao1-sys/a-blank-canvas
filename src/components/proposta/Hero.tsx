@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Logo } from "./Logo";
+import arrowIcon from "@/assets/proposta/arrow-icon.png";
 
 export const Hero = () => {
   const scrollToNext = () => {
@@ -45,12 +46,9 @@ export const Hero = () => {
           initial={{ scale: 0.9, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="absolute w-16 h-16 -left-8 -top-8 rounded-full flex items-center justify-center"
-          style={{
-            background: "linear-gradient(135deg, #ef4444, #7f1d1d)",
-          }}
+          className="absolute w-16 h-16 -left-8 -top-8 rounded-full flex items-center justify-center overflow-hidden"
         >
-          <ArrowUpRight className="text-white" size={26} />
+          <img src={arrowIcon} alt="" className="w-full h-full object-cover" />
         </motion.div>
       </div>
 
