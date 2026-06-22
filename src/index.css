@@ -68,6 +68,14 @@
   ::selection {
     background: hsl(25 85% 55% / 0.2);
   }
+
+  .proposta-page h1,
+  .proposta-page h2,
+  .proposta-page h3,
+  .proposta-page h4 {
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: -0.01em;
+  }
 }
 
 @layer utilities {
