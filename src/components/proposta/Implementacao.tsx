@@ -24,7 +24,7 @@ export const Implementacao = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-white/70 leading-relaxed text-base md:text-lg"
         >
-          O primeiro lançamento pago será implementado em até 20 dias
+          O primeiro lançamento pago será implementado em até 25 dias
           corridos, contemplando: planejamento estratégico, produção dos
           materiais, venda de ingressos, realização do evento e abertura do
           carrinho da oferta principal. O objetivo desta primeira ação é

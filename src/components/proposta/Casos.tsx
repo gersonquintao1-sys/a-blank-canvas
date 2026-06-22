@@ -32,20 +32,17 @@ export const Casos = () => {
             precisamos ser transparentes:
           </p>
           <p>
-            Em nossa experiência, cerca de um em cada sete projetos tende a
-            não alcançar o resultado desejado. Isso não acontece por falhas
-            na nossa execução, mas, na maioria das vezes, pela falta de
-            clareza do contratante em relação às metas, aos objetivos e aos
-            dados reais disponíveis, bem como pelas projeções e ações
-            previstas para os próximos meses.
+            Pela nossa experiência, cerca de 1 em cada 7 projetos não
+            atinge o resultado esperado. Normalmente, isso ocorre pela
+            falta de clareza sobre metas, objetivos, dados reais do
+            negócio e projeções para os meses seguintes.
           </p>
           <p>
-            Queremos muito que você seja o nosso próximo case de sucesso.
-            Para isso, nossa relação precisa ser uma via de mão dupla: nós
-            nos comprometemos a prestar o serviço com o máximo de
-            eficiência, qualidade e respeito aos prazos, enquanto esperamos
-            da sua parte total transparência e veracidade nas informações
-            compartilhadas.
+            Queremos que você seja nosso próximo case de sucesso. Para
+            isso, a parceria precisa ser uma via de mão dupla: nós nos
+            comprometemos a entregar o serviço com máxima eficiência,
+            qualidade e respeito aos prazos, enquanto esperamos total
+            transparência e veracidade nas informações compartilhadas.
           </p>
         </motion.div>
       </div>

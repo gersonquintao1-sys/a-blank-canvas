@@ -57,7 +57,7 @@ export const entregas1 = [
   },
   {
     title: "Validação Acelerada",
-    text: "Neste momento, o foco será a captura de dados e a execução mais rápida possível. Então, validaremos as vendas de ingressos, direcionando as vendas para o time comercial e buscando, no mínimo, uma conversão de 8% sobre a base total de compradores de ingressos.",
+    text: "Neste momento, o foco será validar a oferta dos ingressos buscando, no mínimo, uma conversão de 8% sobre a base total de compradores de ingressos.",
   },
   {
     title: "Debriefing",
@@ -68,7 +68,7 @@ export const entregas1 = [
 export const entregas2 = [
   {
     title: "Briefing LL Pago",
-    text: "Um dia após o debriefing, iniciaremos o briefing do lançamento, no qual será necessário um maior nível de concentração e energia, com até 24 horas de atividades planejadas para ajustar todos os pontos que serão utilizados neste lançamento. O foco nesta etapa é mais a venda de ingressos, sem a geração de caixa.",
+    text: "Um dia após o debriefing, iniciaremos o briefing do lançamento, no qual será necessário um maior nível de concentração e energia, com até 24 horas de atividades planejadas para ajustar todos os pontos que serão utilizados neste lançamento.",
   },
   {
     title: "Execução do 1º LL Pago",
@@ -80,7 +80,7 @@ export const entregas2 = [
   },
   {
     title: "Próximas Execuções",
-    text: "Nesta etapa, será definido um calendário para as próximas execuções de lançamentos pagos, conforme o atingimento dos objetivos de faturamento mensal previamente estabelecidos.",
+    text: "Nesta etapa, será definido um calendário para as próximas execuções de lançamentos pagos, conforme o objetivos de faturamento mensal previamente estabelecidos.",
   },
 ];
 

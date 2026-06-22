@@ -27,9 +27,9 @@ export const NossaSolucao = () => {
           <p className="text-white/70 leading-relaxed text-base md:text-lg">
             Desenvolver, validar e escalar um processo previsível de
             aquisição de clientes e geração de vendas por meio de
-            lançamentos pagos, utilizando workshops, desafios e webinars
-            como principais mecanismos de captação, relacionamento e
-            conversão de clientes.
+            lançamentos pagos (workshops, desafios e webinars) como
+            principais mecanismos de captação, relacionamento e conversão
+            de clientes.
           </p>
         </motion.div>
 
