@@ -4,20 +4,20 @@ import { CTAButton } from "./HeroSection";
 
 const objections = [
   {
-    q: '"É muito caro para meu orçamento"',
-    a: "R$3,70 por dia é literalmente o preço de um café. Você gasta mais com aquele delivery que te deixa inchada. E com nossa garantia, ou você elimina no mínimo 3kg em 14 dias ou devolvemos 100% do investimento.",
+    q: '"Minha loja é pequena, acho que não vou conseguir comprar dos mesmos fornecedores dos grandes"',
+    a: "A maioria dos fornecedores da lista trabalha com pedido mínimo baixo e aceita CPF ou MEI. Você não precisa ser uma rede grande — precisa é comprar na fonte certa, do mesmo jeito que os grandes fazem.",
   },
   {
-    q: '"Não tenho tempo nem para tomar banho direito"',
-    a: "O método foi criado POR mães ocupadas PARA mães ocupadas. São apenas 3 ajustes simples no que você já come. Funciona em 15 minutos enquanto o jantar cozinha. Zero tempo extra, zero complicação.",
+    q: '"Já tenho fornecedor, não preciso disso"',
+    a: "A lista serve justamente pra comparar preços e nunca mais ficar refém de um fornecedor só. Se ele atrasar, subir o preço ou sumir, você tem para onde ir no mesmo dia — sem perder venda.",
   },
   {
-    q: '"Já tentei de tudo e nada funciona comigo"',
-    a: 'Você nunca tentou algo específico para o metabolismo pós-maternidade. As outras dietas ignoram seu "Cadeado Hormonal". Nosso método usa a chave certa: mais de 2.897 mães já comprovaram que funciona.',
+    q: '"Lista de fornecedor sempre é golpe ou coisa desatualizada"',
+    a: "Cada fornecedor do Cofre é verificado manualmente: CNPJ ativo, testado por outros lojistas e revisado a cada atualização. Nada de contato genérico copiado da internet.",
   },
   {
-    q: '"Minha família não vai aceitar comida de dieta"',
-    a: "As receitas são tão gostosas que seu marido vai IMPLORAR pra você continuar. São pratos normais que toda família come, só que na versão que destrava seu metabolismo. Seus filhos nem vão perceber a diferença.",
+    q: '"Não entendo nada de negociar com fábrica, só uma lista não resolve"',
+    a: "Por isso o Cofre vem com o mini-curso de Negociação Blindada: como pedir amostra, negociar preço e prazo, e validar um fornecedor antes de pagar qualquer coisa.",
   },
 ];
 

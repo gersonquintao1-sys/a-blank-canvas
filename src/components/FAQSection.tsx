@@ -3,12 +3,12 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
-  { q: "Como recebo o acesso ao método?", a: "Imediatamente após a confirmação do pagamento, você recebe login e senha para nossa plataforma exclusiva. Pode começar em 2 minutos." },
-  { q: "E se não funcionar comigo?", a: "Se você não eliminar no mínimo 3kg em 14 dias, devolvemos 100% do seu investimento. Sem perguntas, sem burocracia." },
-  { q: "É realmente para mães ocupadas?", a: "Foi criado especificamente para mulheres sobrecarregadas. Funciona em 15 minutos enquanto o jantar cozinha. Zero tempo extra, zero complicação." },
-  { q: "Terei suporte se tiver dúvidas?", a: "Sim! Comunidade exclusiva no Telegram com suporte direto da nossa equipe e outras mães que estão no mesmo processo." },
-  { q: "Em quanto tempo vejo resultados?", a: "Primeiros 3 dias: 2kg de inchaço eliminados. 7 dias completos: até 5kg na balança. Energia renovada desde o primeiro dia." },
-  { q: "Posso parcelar o investimento?", a: "Sim! Até 2x de R$5,21 no cartão. Menos que um café por dia para transformar sua vida para sempre." },
+  { q: "Como recebo o acesso ao Cofre?", a: "Imediatamente após a confirmação do pagamento, você recebe login e senha para nossa plataforma exclusiva, com a lista de fornecedores e o curso liberados. Pode começar em 2 minutos." },
+  { q: "Os fornecedores realmente vendem pra loja pequena?", a: "Sim. A grande maioria trabalha com pedido mínimo baixo e aceita CPF ou MEI. O Cofre é organizado justamente pra lojistas que estão começando ou querem ampliar sua base de fornecedores." },
+  { q: "E se eu não gostar ou achar que não é pra mim?", a: "Você tem 7 dias de garantia incondicional. Se não fizer sentido pra sua loja, devolvemos 100% do seu investimento, sem perguntas." },
+  { q: "A lista é atualizada ou fica desatualizada rápido?", a: "O Cofre passa por atualizações trimestrais, com fornecedores novos entrando e os que pararam de responder saindo da lista." },
+  { q: "Terei suporte se tiver dúvidas na hora de negociar?", a: "Sim! Comunidade exclusiva no Telegram com suporte direto da nossa equipe e outros lojistas passando pelo mesmo processo de compra." },
+  { q: "Preciso ter loja física ou CNPJ grande para comprar?", a: "Não. O Cofre foi montado para lojistas de todos os tamanhos — loja física, e-commerce ou perfil de vendas no Instagram." },
 ];
 
 const FAQItem = ({ q, a, index }: { q: string; a: string; index: number }) => {

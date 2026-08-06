@@ -4,20 +4,20 @@ import { CTAButton } from "./HeroSection";
 
 const falseSolutions = [
   {
-    title: "Dietas Restritivas Tradicionais",
-    text: 'Cortar carboidrato, passar fome, contar calorias... Seu cérebro materno interpreta isso como "escassez" e produz ainda MAIS cortisol, trancando sua gordura com ainda mais força. É por isso que você perde 2kg e ganha 4 de volta.',
+    title: "Grupos de WhatsApp \"Atacado\"",
+    text: "Cheios de fotos repostadas e preço de varejo disfarçado de atacado. Quando você finalmente encontra algo bom, o fornecedor some depois do pagamento ou manda peça diferente da foto.",
   },
   {
-    title: "Academia e Personal Trainer",
-    text: '"Sem dor, sem ganho!" Mas quem tem tempo pra academia quando mal consegue tomar banho direito? E exercício em excesso também eleva cortisol. Seu corpo de mãe precisa de recuperação, não de mais stress.',
+    title: "Comprar Direto da China Sem Intermediário",
+    text: "Pedido mínimo alto, prazo de 60 a 90 dias, impostos e nacionalização que comem a economia toda. Sem falar no risco de a peça nem passar pela alfândega.",
   },
   {
-    title: "Shakes e Substitutos de Refeição",
-    text: 'Você até perde peso no começo (porque está passando fome), mas em 15 dias está atacando a geladeira de madrugada com mais compulsão que antes. Seu metabolismo maternal precisa de gorduras específicas, não de química em pó.',
+    title: "Pesquisar Fornecedor no Google",
+    text: "A primeira página é dominada por quem paga anúncio — geralmente um atacadista comum, não a fábrica. Você paga o mesmo preço de tabela que qualquer concorrente iniciante paga.",
   },
   {
-    title: 'Apps de Dieta e "Reeducação Alimentar"',
-    text: "Você baixa, registra algumas refeições e... esquece. Quem tem tempo pra ficar contando ponto de comida quando tem filho doente, reunião no trabalho e casa pra arrumar? Mãe precisa de simplicidade, não de mais uma tarefa.",
+    title: "Comprar de Outro Lojista ou Distribuidor Regional",
+    text: "A margem já vem cortada pela metade, porque tem outra pessoa lucrando entre você e a fábrica. Você nunca chega no preço de quem compra na origem.",
   },
 ];
 
@@ -31,7 +31,7 @@ const FalseSolutionsSection = () => (
       >
         <span className="premium-badge mb-5 inline-flex">O que não funciona</span>
         <h2 className="font-display text-2xl md:text-4xl font-bold text-foreground">
-          Por que outras soluções <span className="text-gradient-accent">falham</span>
+          Por que as outras formas de buscar fornecedor <span className="text-gradient-accent">falham</span>
         </h2>
       </motion.div>
 
@@ -60,7 +60,7 @@ const FalseSolutionsSection = () => (
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <CTAButton>DESCOBRIR A SOLUÇÃO QUE FUNCIONA</CTAButton>
+        <CTAButton>QUERO A LISTA VERIFICADA</CTAButton>
       </motion.div>
     </div>
   </section>

@@ -1,7 +1,6 @@
-import guaranteeSeal from "@/assets/guarantee-seal.png";
 import { CTAButton } from "./HeroSection";
 import { motion } from "framer-motion";
-import { Shield } from "lucide-react";
+import { Shield, ShieldCheck } from "lucide-react";
 
 const GuaranteeSection = () => (
   <section className="py-20 md:py-32 px-4 section-primary-subtle">
@@ -21,23 +20,20 @@ const GuaranteeSection = () => (
         initial={{ opacity: 0, scale: 0.96 }} whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }} transition={{ duration: 0.6 }}
       >
-        <img
-          src={guaranteeSeal}
-          alt="Selo de Garantia 14 Dias"
-          className="w-28 h-28 mx-auto mb-8 animate-float drop-shadow-lg"
-          loading="lazy"
-        />
+        <div className="w-24 h-24 mx-auto mb-8 rounded-full bg-accent/10 border border-accent/20 flex items-center justify-center animate-float">
+          <ShieldCheck className="w-12 h-12 text-accent" />
+        </div>
         <h3 className="font-display text-xl md:text-2xl font-bold text-foreground mb-5 tracking-tight">
-          GARANTIA INCONDICIONAL DE 14 DIAS
+          GARANTIA INCONDICIONAL DE 7 DIAS
         </h3>
         <p className="text-foreground/75 leading-[1.8] mb-5">
-          Se você não eliminar no mínimo 3kg em 14 dias seguindo nosso método, devolvemos 100% do seu investimento.
+          Se você acessar o Cofre do Lojista™ e sentir que não é pra você, devolvemos 100% do seu investimento em até 7 dias.
         </p>
         <p className="text-foreground font-semibold mb-5">
           Sem perguntas. Sem burocracia. Sem complicação.
         </p>
         <p className="text-muted-foreground text-sm leading-relaxed">
-          Assumimos todo o risco porque sabemos que o Sistema Cetoleve™ funciona. Mais de 2.897 mães brasileiras já comprovaram. Agora é sua vez.
+          Assumimos todo o risco porque sabemos que a lista funciona. Centenas de lojistas de moda masculina já compraram direto da fonte com o Cofre. Agora é sua vez.
         </p>
       </motion.div>
 
@@ -46,9 +42,9 @@ const GuaranteeSection = () => (
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <CTAButton>SIM, QUERO DESTRANCAR MEU METABOLISMO AGORA</CTAButton>
+        <CTAButton>SIM, QUERO DESBLOQUEAR O COFRE AGORA</CTAButton>
         <p className="text-muted-foreground text-sm mt-5">
-          De R$ 197 por apenas <strong className="text-accent">R$ 9,90</strong> (O preço de 1 delivery que te deixa inchada)
+          De R$ 197 por apenas <strong className="text-accent">R$ 27</strong> (o preço de uma camiseta básica)
         </p>
         <p className="text-xs text-muted-foreground/70 mt-2">
           ✓ Acesso Imediato &nbsp;|&nbsp; ✓ Garantia Incondicional &nbsp;|&nbsp; ✓ Suporte Incluído
