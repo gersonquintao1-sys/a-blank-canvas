@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import { Flame } from "lucide-react";
+import { Key } from "lucide-react";
 import { CTAButton } from "./HeroSection";
-import storyMirror from "@/assets/story-mirror.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -12,10 +11,10 @@ const fadeUp = {
 };
 
 const bulletPoints = [
-  { title: "Destravamento Rápido", desc: 'Abre o "cadeado hormonal" do seu corpo em apenas 72 horas;' },
-  { title: "Resultados Imediatos", desc: "Um método validado que já permitiu que mais de 2.897 mães brasileiras eliminassem 5kg logo na primeira semana;" },
-  { title: "Sem Passar Fome", desc: "Você continua comendo coisas gostosas que te deixam satisfeita, sem dietas restritivas;" },
-  { title: "Ideal para Rotinas Agitadas", desc: "Funciona especialmente com mães ocupadas, transformando sua rotina maluca no combustível perfeito para o derretimento de gordura 24 horas por dia." },
+  { title: "Acesso Direto à Fábrica", desc: "Pula 2 ou 3 intermediários e compra no mesmo preço que os grandes lojistas compram;" },
+  { title: "Fornecedores Verificados", desc: "Mais de 150 fábricas e distribuidores testados manualmente, sem golpe e sem calote;" },
+  { title: "Preço de Atacado Real", desc: "Peças a partir de R$14, com descontos de até 70% sobre o preço que você paga hoje;" },
+  { title: "Ideal pra Loja de Qualquer Tamanho", desc: "Pedido mínimo baixo, aceita CPF ou MEI — não precisa ser uma rede grande para comprar como uma." },
 ];
 
 const StorySection = () => (
@@ -25,39 +24,24 @@ const StorySection = () => (
         className="font-display text-2xl md:text-4xl lg:text-[2.5rem] font-bold text-center leading-tight text-foreground mb-14"
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={0}
       >
-        Se você se reconheceu nessa cena, precisa saber:{" "}
-        <span className="text-gradient-accent">O problema nunca foi sua falta de força de vontade.</span>
+        Se você já sentiu que trabalha pro fornecedor e não pro seu bolso, precisa saber:{" "}
+        <span className="text-gradient-accent">o problema nunca foi o seu preço de venda.</span>
       </motion.h2>
-
-      {/* Illustrative image */}
-      <motion.div
-        className="my-10 max-w-md mx-auto"
-        initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={0.5}
-      >
-        <div className="premium-card overflow-hidden rounded-2xl p-0">
-          <img
-            src={storyMirror}
-            alt="Mulher refletindo sobre sua jornada"
-            className="w-full h-auto object-cover"
-            loading="lazy"
-          />
-        </div>
-      </motion.div>
 
       <motion.div
         className="premium-card p-8 md:p-12 space-y-7 text-foreground/85 text-lg leading-[1.8]"
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={1}
       >
         <p>
-          Era 6h45 da manhã de uma segunda-feira qualquer. Fernanda entrou no banheiro evitando o reflexo no espelho, como sempre fazia há meses. Mas algo a fez parar. Era aquele vestido vermelho pendurado atrás da porta — o mesmo que usou no aniversário de casamento há 5 anos, quando ainda se sentia <em className="text-foreground">mulher</em>, não apenas <em className="text-foreground">"a mãe do Pedro e da Sofia"</em>.
+          Eram 23h de uma quinta-feira e Rafael ainda estava com a calculadora aberta no celular, tentando entender por que a loja vendia bem no Instagram, mas o lucro no fim do mês mal pagava o aluguel. Ele comprava "no atacado", pagando R$54 numa camisa que revendia por R$89 — uma margem que parecia boa, até ele ver a mesma peça, do mesmo tecido, sendo vendida por R$29 no perfil de um concorrente três vezes menor que o dele.
         </p>
         <blockquote className="border-l-4 border-accent/40 pl-6 py-2">
           <p className="text-accent font-semibold italic text-xl leading-relaxed">
-            "Quando foi que eu desisti de mim?", pensou, enquanto lágrimas escorreram pelo rosto inchado de mais uma noite mal dormida.
+            "Como ele vende por menos do que eu compro?", pensou Rafael, encarando a planilha que teimava em não fechar no verde.
           </p>
         </blockquote>
         <p>
-          Essa descoberta está mudando a vida de milhares de mães brasileiras que, assim como Fernanda, sentiam que estavam lutando uma batalha perdida.
+          A resposta não estava no marketing, nem no preço de venda. Estava em quantas mãos a peça passava antes de chegar até ele — e essa descoberta está mudando a forma como centenas de lojistas de moda masculina compram hoje.
         </p>
       </motion.div>
 
@@ -68,10 +52,10 @@ const StorySection = () => (
         >
           <span className="premium-badge mb-5 inline-flex">O mecanismo</span>
           <h3 className="font-display text-2xl md:text-3xl lg:text-4xl font-bold text-foreground leading-tight">
-            O "Cadeado Hormonal"
+            A Cadeia dos Intermediários
           </h3>
           <p className="text-muted-foreground text-lg mt-2">
-            Por que você pode viver de alface e a barriga não muda
+            Por que sua margem desaparece antes de chegar no seu bolso
           </p>
         </motion.div>
 
@@ -79,14 +63,14 @@ const StorySection = () => (
           className="text-lg text-foreground/80 leading-[1.8] text-center max-w-2xl mx-auto mb-10"
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={1}
         >
-          Após anos estudando o metabolismo feminino pós-maternidade, descobrimos que depois da gravidez, seu corpo desenvolve um excesso de cortisol que literalmente <strong className="text-foreground">tranca sua gordura em um cofre e joga a chave fora</strong>. É por isso que você pode se matar na academia, mas os resultados simplesmente não aparecem.
+          Depois de mapear centenas de fábricas de roupa masculina no Brasil, descobrimos que a maioria dos lojistas iniciantes não compra da fábrica — compra de um atacadista, que compra de outro atacadista, que compra da fábrica. Cada mão extra nessa corrente <strong className="text-foreground">soma de 15% a 40% no preço</strong> antes da peça chegar até você. É por isso que você trabalha o dia inteiro, mas a margem some no caminho.
         </motion.p>
 
         <motion.p
           className="text-center text-xl font-bold text-primary mb-14"
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={2}
         >
-          Mas existe uma solução científica para isso.
+          Mas existe um jeito simples de pular direto pra fonte.
         </motion.p>
       </div>
 
@@ -95,9 +79,9 @@ const StorySection = () => (
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-60px" }} variants={fadeUp} custom={0}
       >
         <h4 className="font-display text-xl md:text-2xl font-bold text-foreground mb-8 leading-tight">
-          Chamamos isso de <span className="text-gradient-accent">Cetose Bio-Idêntica Feminina</span>.
+          Chamamos isso de <span className="text-gradient-accent">Cofre do Lojista™</span>.
           <span className="block text-muted-foreground text-lg font-body font-normal mt-2">
-            Veja o que essa "Chave Mestra Biológica" é capaz de fazer:
+            Veja o que essa "chave direta pra fábrica" é capaz de fazer:
           </span>
         </h4>
         <div className="space-y-5">
@@ -108,7 +92,7 @@ const StorySection = () => (
               initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp} custom={i * 0.5}
             >
               <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center mt-0.5">
-                <Flame className="w-5 h-5 text-accent" />
+                <Key className="w-5 h-5 text-accent" />
               </div>
               <span className="text-foreground/85 text-lg leading-relaxed">
                 <strong className="text-foreground">{item.title}:</strong> {item.desc}
@@ -124,7 +108,7 @@ const StorySection = () => (
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <CTAButton>QUERO DESTRAVAR MEU METABOLISMO</CTAButton>
+        <CTAButton>QUERO COMPRAR DIRETO DA FONTE</CTAButton>
       </motion.div>
     </div>
   </section>

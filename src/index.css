@@ -6,46 +6,46 @@
 
 @layer base {
   :root {
-    --background: 35 33% 95%;
-    --foreground: 25 25% 15%;
+    --background: 0 0% 6.5%;
+    --foreground: 40 20% 94%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 25 25% 15%;
+    --card: 0 0% 9.5%;
+    --card-foreground: 40 20% 94%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 25 25% 15%;
+    --popover: 0 0% 9.5%;
+    --popover-foreground: 40 20% 94%;
 
-    --primary: 152 45% 28%;
-    --primary-foreground: 40 30% 96%;
+    --primary: 210 12% 72%;
+    --primary-foreground: 0 0% 8%;
 
-    --secondary: 35 30% 90%;
-    --secondary-foreground: 25 25% 15%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 40 20% 94%;
 
-    --muted: 35 20% 92%;
-    --muted-foreground: 25 10% 45%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 40 8% 60%;
 
-    --accent: 25 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 43 74% 52%;
+    --accent-foreground: 0 0% 9%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 56%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 35 20% 85%;
-    --input: 35 20% 85%;
-    --ring: 152 45% 28%;
+    --border: 0 0% 21%;
+    --input: 0 0% 21%;
+    --ring: 43 74% 52%;
 
     --radius: 0.75rem;
 
-    --highlight: 45 90% 55%;
-    --highlight-foreground: 25 25% 15%;
+    --highlight: 43 90% 60%;
+    --highlight-foreground: 0 0% 9%;
 
-    --success: 152 60% 40%;
+    --success: 152 45% 45%;
     --success-foreground: 0 0% 100%;
 
     /* Premium surfaces */
-    --surface-elevated: 0 0% 100%;
-    --surface-sunken: 35 25% 92%;
-    --surface-glass: 0 0% 100% / 0.7;
+    --surface-elevated: 0 0% 11.5%;
+    --surface-sunken: 0 0% 4%;
+    --surface-glass: 0 0% 8% / 0.7;
   }
 }
 
@@ -66,7 +66,7 @@
   }
 
   ::selection {
-    background: hsl(25 85% 55% / 0.2);
+    background: hsl(43 74% 52% / 0.2);
   }
 
   .proposta-page h1,
@@ -81,12 +81,12 @@
 @layer utilities {
   .text-gradient-accent {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(25 85% 55%), hsl(15 80% 50%));
+    background-image: linear-gradient(135deg, hsl(43 74% 52%), hsl(35 70% 44%));
   }
 
   .text-gradient-primary {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(152 45% 28%), hsl(152 50% 38%));
+    background-image: linear-gradient(135deg, hsl(210 15% 82%), hsl(210 10% 60%));
   }
 
   .section-divider {
@@ -98,9 +98,9 @@
 
   .glow-accent {
     box-shadow:
-      0 0 0 1px hsl(25 85% 55% / 0.1),
-      0 4px 24px -4px hsl(25 85% 55% / 0.15),
-      0 12px 48px -8px hsl(25 85% 55% / 0.1);
+      0 0 0 1px hsl(43 74% 52% / 0.1),
+      0 4px 24px -4px hsl(43 74% 52% / 0.15),
+      0 12px 48px -8px hsl(43 74% 52% / 0.1);
   }
 
   .glow-success {
@@ -145,15 +145,15 @@
   }
 
   .section-primary-subtle {
-    background: linear-gradient(180deg, hsl(152 45% 28% / 0.04), hsl(152 45% 28% / 0.02));
+    background: linear-gradient(180deg, hsl(43 74% 52% / 0.05), hsl(43 74% 52% / 0.015));
   }
 
   /* Premium badge */
   .premium-badge {
     @apply inline-flex items-center gap-1.5 text-xs font-semibold tracking-wider uppercase px-3 py-1 rounded-full;
-    background: linear-gradient(135deg, hsl(25 85% 55% / 0.12), hsl(25 85% 55% / 0.06));
+    background: linear-gradient(135deg, hsl(43 74% 52% / 0.12), hsl(43 74% 52% / 0.06));
     color: hsl(var(--accent));
-    border: 1px solid hsl(25 85% 55% / 0.15);
+    border: 1px solid hsl(43 74% 52% / 0.15);
   }
 
   /* Subtle grain texture overlay */

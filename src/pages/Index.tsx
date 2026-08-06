@@ -36,8 +36,8 @@ const Index = () => {
         <FAQSection />
       </main>
       <footer className="py-10 text-center text-sm text-muted-foreground/70 border-t border-border/30">
-        <p className="font-medium">© 2025 Cetoleve™ — Todos os direitos reservados.</p>
-        <p className="mt-1.5 text-xs">Este produto não substitui acompanhamento médico.</p>
+        <p className="font-medium">© 2026 Cofre do Lojista™ — Todos os direitos reservados.</p>
+        <p className="mt-1.5 text-xs">Resultados de margem e vendas variam conforme a negociação e a operação de cada loja.</p>
       </footer>
     </div>
   );

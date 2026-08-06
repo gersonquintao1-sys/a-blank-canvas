@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { CTAButton } from "./HeroSection";
 
 const testimonials = [
-  { text: "Eu achava que meu metabolismo tinha morrido depois da segunda cesárea. Em 7 dias perdi 6kg e finalmente consegui fechar a calça jeans. Meu marido até perguntou se eu tinha feito algum procedimento!", name: "Marina", info: "mãe de 2, São Paulo" },
-  { text: "A compulsão noturna era meu maior inimigo. Agora como queijo à noite e acordo mais magra! Parece mágica, mas é só biologia funcionando a meu favor.", name: "Carla", info: "34 anos, Belo Horizonte" },
-  { text: "Estava gastando R$800 por mês com nutricionista e personal. O Cetoleve custou menos que uma consulta e me deu resultados que nunca consegui antes.", name: "Juliana", info: "mãe de 3, Rio de Janeiro" },
-  { text: "Em 5 dias já tinha energia pra brincar com meus filhos. Em 2 semanas, 8kg a menos. Hoje visto aquele vestido que estava guardado há 4 anos.", name: "Fernanda", info: "35 anos, Curitiba" },
-  { text: "Resultado em 7 dias que outras dietas prometiam em meses. E o melhor: comendo coisas gostosas, sem passar fome.", name: "Patrícia", info: "mãe de 1, Salvador" },
-  { text: "Melhor investimento da minha vida. Economizei mais em delivery e doces do que gastei com o método. E ainda ganhei minha autoestima de volta.", name: "Ana", info: "32 anos, Brasília" },
+  { text: "Eu achava que minha margem tinha um teto. Troquei 2 fornecedores pela lista do Cofre e minha camisa que custava R$52 passou a custar R$31. Só nisso já paguei o material 20 vezes.", name: "Rodrigo", info: "loja física, São Paulo" },
+  { text: "O checklist anti-calote sozinho já valeu o investimento. Ia fechar pedido com um 'fornecedor' que sumiu com o dinheiro de outros dois lojistas do meu bairro.", name: "Thiago", info: "loja no Instagram, Belo Horizonte" },
+  { text: "Eu estava pagando o mesmo preço de quem compra 5 peças. Descobri fábrica que vende direto, sem MOQ absurdo, e ainda manda amostra. Mudou o jogo da minha loja.", name: "Fernando", info: "e-commerce, Rio de Janeiro" },
+  { text: "Sempre tive medo de negociar com fábrica achando que ia parecer amador. O módulo de negociação me deu o script certo e hoje já fechei com 4 fornecedores novos.", name: "Lucas", info: "loja de bairro, Curitiba" },
+  { text: "Comprei achando que era só uma lista de contato. Vim descobrir que o curso de precificação sozinho resolveu um problema que eu tinha há 2 anos: eu vendia achando que lucrava, e não lucrava.", name: "Diego", info: "multimarcas, Salvador" },
+  { text: "Melhor R$27 que já gastei na loja. Economizei mais no primeiro pedido com um fornecedor novo do que gastei com o Cofre inteiro.", name: "Marcelo", info: "loja física, Brasília" },
 ];
 
 const TestimonialsSection = () => (
@@ -21,7 +21,7 @@ const TestimonialsSection = () => (
       >
         <span className="premium-badge mb-5 inline-flex">Resultados reais</span>
         <h2 className="font-display text-2xl md:text-4xl font-bold text-foreground">
-          O que nossos clientes <span className="text-gradient-accent">dizem</span>
+          O que outros lojistas <span className="text-gradient-accent">dizem</span>
         </h2>
       </motion.div>
 

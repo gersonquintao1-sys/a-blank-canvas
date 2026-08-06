@@ -1,17 +1,25 @@
-import { Flame, Play, Zap, MessageSquare } from "lucide-react";
+import { Factory, Handshake, Calculator, ShieldCheck, Play, Zap, MessageSquare, Shirt, Layers, Footprints, Boxes, Gem, Crown } from "lucide-react";
 import { motion } from "framer-motion";
 import { CTAButton } from "./HeroSection";
-import ketoFood from "@/assets/keto-food.jpg";
 
 const modules = [
-  { icon: Flame, title: "Módulo 1: Ativação da Cetose Bio-Idêntica", time: "7 min", desc: "O protocolo exato para neutralizar o cortisol pós-parto em 72h e destrancar o cadeado da sua gordura. Você aprende os 3 ajustes alimentares que fazem seu corpo queimar gordura antiga 24 horas por dia." },
-  { icon: Flame, title: "Módulo 2: Cardápio da Mãe Ocupada", time: "9 min", desc: "17 refeições práticas que cabem na sua rotina maluca e mantêm a queima acelerada. De café da manhã com bacon a jantares que toda família ama - sem precisar cozinhar separado." },
-  { icon: Flame, title: "Módulo 3: SOS Compulsão Noturna", time: "9 min", desc: 'Como transformar sua "fraqueza das 22h" no seu maior aliado de emagrecimento. Aprenda a "enganar" seu cérebro com as gorduras certas e eliminar a fome desesperada do final do dia.' },
-  { icon: Flame, title: "Módulo 4: Próximos Passos", time: "10 min", desc: "Seu plano de continuidade para manter os resultados para sempre, sem nunca mais voltar ao peso anterior." },
+  { icon: Factory, title: "Módulo 1: O Mapa do Cofre", time: "6 min", desc: "Como navegar pela lista de mais de 150 fornecedores e escolher os certos pro seu tipo de loja, seja física, online ou no Instagram." },
+  { icon: Handshake, title: "Módulo 2: Negociação Blindada", time: "11 min", desc: "O passo a passo pra falar com a fábrica sem parecer amador: como pedir amostra, negociar preço, prazo e frete — mesmo comprando pouco." },
+  { icon: Calculator, title: "Módulo 3: Precificação Sem Medo", time: "9 min", desc: "A planilha e o método pra calcular seu markup ideal, sem chutar preço e sem vender no prejuízo achando que está lucrando." },
+  { icon: ShieldCheck, title: "Módulo 4: Checklist Anti-Calote", time: "8 min", desc: "As perguntas e verificações que você faz ANTES de pagar qualquer fornecedor novo, pra nunca mais cair em golpe." },
+];
+
+const categories = [
+  { icon: Shirt, name: "Camisas" },
+  { icon: Layers, name: "Jaquetas" },
+  { icon: Footprints, name: "Tênis" },
+  { icon: Boxes, name: "Calças" },
+  { icon: Gem, name: "Acessórios" },
+  { icon: Crown, name: "Linha Social" },
 ];
 
 const metaItems = [
-  { icon: Play, label: "Formato", value: "Aulas em vídeo de alta qualidade" },
+  { icon: Play, label: "Formato", value: "PDF do Cofre + vídeo-aulas curtas" },
   { icon: Zap, label: "Acesso", value: "Imediato via plataforma exclusiva" },
   { icon: MessageSquare, label: "Suporte", value: "Comunidade privada no Telegram" },
 ];
@@ -29,25 +37,27 @@ const OfferSection = () => (
           Você vai receber
         </h2>
         <p className="font-display text-xl md:text-2xl font-bold text-gradient-accent">
-          SISTEMA CETOLEVE™
+          COFRE DO LOJISTA™
         </p>
         <p className="text-muted-foreground text-lg mt-2">
-          O Primeiro Método de Desbloqueio Metabólico Pós-Maternidade
+          A Lista + o Curso Que Ensina a Comprar Como os Grandes Lojistas
         </p>
       </motion.div>
 
-      {/* Food image */}
+      {/* Category grid */}
       <motion.div
-        className="mb-12 premium-card overflow-hidden rounded-2xl p-0"
+        className="mb-12 premium-card p-6 md:p-8 grid grid-cols-3 md:grid-cols-6 gap-4"
         initial={{ opacity: 0, scale: 0.97 }} whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }} transition={{ duration: 0.6 }}
       >
-        <img
-          src={ketoFood}
-          alt="Refeições saudáveis e saborosas do método Cetoleve"
-          className="w-full h-56 md:h-72 object-cover"
-          loading="lazy"
-        />
+        {categories.map((cat) => (
+          <div key={cat.name} className="flex flex-col items-center gap-2 text-center">
+            <div className="w-11 h-11 rounded-xl bg-accent/10 border border-accent/10 flex items-center justify-center">
+              <cat.icon className="w-5 h-5 text-accent" />
+            </div>
+            <span className="text-xs text-muted-foreground font-medium">{cat.name}</span>
+          </div>
+        ))}
       </motion.div>
 
       <div className="space-y-4">
@@ -96,7 +106,7 @@ const OfferSection = () => (
         initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }} transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <CTAButton>GARANTIR MINHA VAGA AGORA</CTAButton>
+        <CTAButton>GARANTIR MEU ACESSO AGORA</CTAButton>
       </motion.div>
     </div>
   </section>

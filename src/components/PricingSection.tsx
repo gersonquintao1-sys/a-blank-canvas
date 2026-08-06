@@ -1,14 +1,14 @@
 import { CTAButton } from "./HeroSection";
-import { Check, Coffee, UtensilsCrossed, Sparkles } from "lucide-react";
+import { Check, Coffee, Shirt, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
 const includedItems = [
-  "Sistema Completo Cetoleve™",
-  "Protocolo Cetose Bio-Idêntica (72h)",
-  "Cardápio da Mãe Ocupada (17 receitas)",
-  "Bônus 1: Lista de Mercado Econômica",
-  'Bônus 2: Calculadora "Olho Mágico"',
-  "Bônus 3: Protocolo Fim de Semana",
+  "Cofre Completo: +150 Fornecedores Verificados",
+  "Curso Negociação Blindada (4 módulos)",
+  "Planilha de Precificação e Markup",
+  "Bônus 1: Script Pronto de WhatsApp Para Fornecedor",
+  "Bônus 2: Checklist Anti-Calote",
+  "Bônus 3: Atualizações Trimestrais do Cofre",
   "Comunidade Exclusiva no Telegram",
 ];
 
@@ -16,7 +16,7 @@ const PricingSection = () => (
   <section id="oferta" className="py-20 md:py-32 px-4 relative">
     {/* Subtle radial bg */}
     <div className="absolute inset-0 pointer-events-none" style={{
-      background: "radial-gradient(ellipse at center, hsl(25 85% 55% / 0.04), transparent 60%)"
+      background: "radial-gradient(ellipse at center, hsl(43 74% 52% / 0.04), transparent 60%)"
     }} />
 
     <div className="max-w-xl mx-auto text-center relative">
@@ -29,7 +29,7 @@ const PricingSection = () => (
           Oferta Especial
         </h2>
         <p className="text-muted-foreground text-lg mb-12">
-          Comece sua transformação agora. Investimento menor que um cafezinho por dia.
+          Comece a comprar direto da fonte hoje. Investimento menor que uma camiseta básica.
         </p>
       </motion.div>
 
@@ -40,7 +40,7 @@ const PricingSection = () => (
       >
         {/* Accent border glow */}
         <div className="absolute -inset-[1px] rounded-3xl" style={{
-          background: "linear-gradient(135deg, hsl(25 85% 55% / 0.3), hsl(25 85% 55% / 0.1), hsl(152 45% 28% / 0.1))",
+          background: "linear-gradient(135deg, hsl(43 74% 52% / 0.3), hsl(43 74% 52% / 0.1), hsl(210 15% 60% / 0.1))",
         }} />
 
         <div className="relative bg-card rounded-3xl p-8 md:p-12 glow-accent">
@@ -54,11 +54,10 @@ const PricingSection = () => (
             <p className="text-xs uppercase tracking-widest text-muted-foreground mb-2 mt-1">POR APENAS</p>
             <div className="flex items-baseline justify-center gap-1">
               <span className="text-2xl font-bold text-foreground/60">R$</span>
-              <span className="font-display text-7xl md:text-8xl font-black text-gradient-accent leading-none">9</span>
-              <span className="font-display text-3xl md:text-4xl font-black text-gradient-accent">,90</span>
+              <span className="font-display text-7xl md:text-8xl font-black text-gradient-accent leading-none">27</span>
             </div>
             <p className="text-muted-foreground text-sm mt-3">
-              Garantia de 14 dias. Risco Zero.
+              Garantia de 7 dias. Risco Zero.
             </p>
           </div>
 
@@ -74,7 +73,7 @@ const PricingSection = () => (
           </div>
 
           <CTAButton className="w-full text-center block">
-            👉 QUERO PERDER 5KG EM 7 DIAS
+            👉 QUERO DESBLOQUEAR O COFRE
           </CTAButton>
 
           <p className="text-xs text-muted-foreground mt-5">
@@ -82,7 +81,7 @@ const PricingSection = () => (
           </p>
           <div className="flex flex-wrap justify-center gap-4 mt-3 text-xs text-muted-foreground">
             <span className="flex items-center gap-1"><Coffee className="w-3 h-3" /> Menos que um café</span>
-            <span className="flex items-center gap-1"><UtensilsCrossed className="w-3 h-3" /> Menos que um delivery</span>
+            <span className="flex items-center gap-1"><Shirt className="w-3 h-3" /> Menos que uma camiseta básica</span>
           </div>
         </div>
       </motion.div>

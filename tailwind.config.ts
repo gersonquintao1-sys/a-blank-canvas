@@ -85,8 +85,8 @@ export default {
           to: { height: "0" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px -5px hsl(25 85% 55% / 0.3), 0 0 40px -10px hsl(25 85% 55% / 0.15)" },
-          "50%": { boxShadow: "0 0 30px -5px hsl(25 85% 55% / 0.5), 0 0 60px -10px hsl(25 85% 55% / 0.25)" },
+          "0%, 100%": { boxShadow: "0 0 20px -5px hsl(43 74% 52% / 0.3), 0 0 40px -10px hsl(43 74% 52% / 0.15)" },
+          "50%": { boxShadow: "0 0 30px -5px hsl(43 74% 52% / 0.5), 0 0 60px -10px hsl(43 74% 52% / 0.25)" },
         },
         "float": {
           "0%, 100%": { transform: "translateY(0)" },
